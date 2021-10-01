@@ -1,0 +1,28 @@
+.header {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-areas: "blank logo cart";
+    align-items: center;
+    background-color: var(--black);
+    padding: var(--large);
+    box-shadow: var(--shadow);
+}
+
+.header .logo {
+    color: var(--white);
+    font: 2rem "Lobster", cursive;
+    grid-area: logo;
+    justify-self: center;
+    transform: rotate(-5deg);
+}
+
+.header .cart {
+    display: flex;
+    grid-area: cart;
+    justify-self: center;
+}
+
+.header .cart-icon {
+    fill: black;
+    height: 25px;
+}
