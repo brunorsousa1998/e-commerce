@@ -14,6 +14,8 @@ const ProductProvider = ({ children }) => {
             const response = await fetch("products.json");
             const data = await response.json();
 
+            data.price = parseFloat(data.price).toFixed(2);
+
             setProducts(data);
         } catch (err) {
             throw new Error("Failed to fetch products");
