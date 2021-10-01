@@ -10,10 +10,11 @@
 
 .header .logo {
     color: var(--white);
-    font: 2rem "Lobster", cursive;
+    font: 1.6rem "Lobster", cursive;
     grid-area: logo;
     justify-self: center;
     transform: rotate(-5deg);
+    text-align: center;
 }
 
 .header .cart {
