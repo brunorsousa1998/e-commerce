@@ -1,4 +1,5 @@
 import { createContext, useReducer } from "react";
+
 import cartReducer from "./reducer";
 
 export const CartContext = createContext();
@@ -15,12 +16,7 @@ const CartProvider = ({ children }) => {
     };
 
     const removeFromCart = (id) => {
-        dispatch({
-            type: "REMOVE",
-            payload: {
-                id,
-            },
-        });
+        dispatch({ type: "REMOVE", payload: { id } });
     };
 
     return (
