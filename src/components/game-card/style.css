@@ -1,0 +1,25 @@
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow);
+    padding: var(--large);
+    margin: var(--large);
+    flex-basis: 300px;
+}
+
+.game-card .info {
+    flex-grow: 1;
+    padding: var(--large) 0;
+}
+
+.game-card .info .title,
+.game-card .info .score {
+    color: var(--black);
+    font-size: 1.2rem;
+}
+
+.game-card .info .price {
+    color: var(--primary);
+    font-size: 1.6rem;
+}
