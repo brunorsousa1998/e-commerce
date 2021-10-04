@@ -1,4 +1,5 @@
-import { createContext, useEffect, useReducer } from "react";
+import { createContext, useReducer } from "react";
+
 import filterReducer from "./reducer";
 
 export const FilterContext = createContext();
@@ -9,10 +10,6 @@ const FilterProvider = ({ children }) => {
         sortMethod: "none",
         sortFunction: (products) => products,
     });
-
-    useEffect(() => {
-        console.log(state);
-    }, [state]);
 
     const changeSearchString = (searchString) => {
         dispatch({

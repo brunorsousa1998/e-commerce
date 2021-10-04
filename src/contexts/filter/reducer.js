@@ -11,8 +11,8 @@ const compareByPrice = (firstProduct, secondProduct) => {
 };
 
 const compareByScore = (firstProduct, secondProduct) => {
-    if (firstProduct.score < secondProduct.score) return -1;
-    if (firstProduct.score > secondProduct.score) return 1;
+    if (firstProduct.score > secondProduct.score) return -1;
+    if (firstProduct.score < secondProduct.score) return 1;
     return 0;
 };
 
