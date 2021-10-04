@@ -3,7 +3,7 @@
     grid-template-columns: 50px auto 50px;
     grid-template-areas: "blank logo cart";
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--primary);
     padding: var(--large);
     box-shadow: var(--shadow);
 }
@@ -15,6 +15,7 @@
     justify-self: center;
     transform: rotate(-5deg);
     text-align: center;
+    user-select: none;
 }
 
 .header .cart {

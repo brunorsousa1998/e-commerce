@@ -5,7 +5,7 @@ import "./style.css";
 const Header = () => {
     return (
         <header className="header">
-            <h1 className="logo">Supera Games</h1>
+            <h1 className="logo">Game Store</h1>
             <div className="cart">
                 <Link to="/carrinho">
                     <img
