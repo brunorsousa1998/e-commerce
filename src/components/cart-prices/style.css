@@ -1,0 +1,12 @@
+.cart-prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: var(--large) 0;
+}
+
+.cart-prices .subtotal,
+.cart-prices .total {
+    color: var(--dark);
+    font-size: 1rem;
+}
