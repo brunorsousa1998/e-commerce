@@ -64,10 +64,7 @@ const CartItem = ({ product }) => {
                 removeFromCart={removeFromCart}
             />
             <div className="total">
-                <h1 className="price">
-                    R$
-                    {(quantity * price).toFixed(2)}
-                </h1>
+                <h1 className="price">R$ {(quantity * price).toFixed(2)}</h1>
             </div>
         </div>
     );
